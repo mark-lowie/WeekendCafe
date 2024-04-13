@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekend Cafe</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="assets/css/w3.css">
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-wide w3-card w3-theme-d1 w3-goldenrod">
+      <div class="logo">
+          <a href="#home" class="w3-bar-item w3-button" style="padding: 8px;">
+            <img class="w3-circle w3-image" src="assets/images/WEEKEND CAFE (1).png" alt="" style="height:10vh;"> WeekendCafe
+          </a>
+          <div class="toogle-nav">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          </div>
+      </div>
+     
+      <div class="w3-nav w3-right w3-hide-small" style="padding-top: 20px;">
+        <nav>
+          <a href="#home" class="w3-bar-item w3-button ">Home</a>
+          <a href="#products" class="w3-bar-item w3-button">Products</a>
+          <a href="#reviews" class="w3-bar-item w3-button">Reviews</a>
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+          <div class="w3-dropdown-hover">
+            <button class="w3-button" title="account"><i class="fa fa-user"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="assets/login/index.html" id="signup" class="w3-bar-item w3-button">Sign Up</a>
+              <a href="assets/login/index.html" id="login" class="w3-bar-item w3-button">Login</a>
+            </div>
+          </div>
+          <a href="#" class="w3-bar-item w3-button" title="Search"><i class="fa fa-search">
+          </i></a>
+          <a href="#" class="w3-bar-item w3-button" title="cart" onclick="toggleCart()">
+            <i class="fas fa-cart-arrow-down"></i>
+            <span id="cart-count">0</span>
+          </a>
+        </nav>
+      </div>
+      <div class="icons">
+        <a href="#home" class="w3-button"><i class="fas fa-home w3-icon"></i><br> Home</a>
+        <a href="#products" class="w3-bar-item w3-button"><i class="fas fa-box w3-icon"></i><br>Products</a>
+        <a href="#reviews" class="w3-bar-item w3-button"><i class="fas fa-star w3-icon"></i><br> Reviews</a>
+        <a href="#about" class="w3-bar-item w3-button"><i class="fas fa-info-circle"></i><br>About</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fas fa-envelope w3-icon"></i><br>Contact</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 5rem">
+    <a href="#home" class="w3-bar-item w3-button ">HOME</a>
+    <a href="#products" class="w3-bar-item w3-button">PRODUCTS</a>
+    <a href="#reviews" class="w3-bar-item w3-button">REVIEWS</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT US</a>
+    <a href="#sign-in" class="w3-bar-item w3-button w3-hide-small" title="account"><i class="fa fa-user"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small" title="Search"><i class="fa fa-search"></i></a>
+   <a href="#" class="w3-bar-item w3-button w3-hide-small" title="cart" onclick="toggleCart()">
+<i class="fas fa-cart-arrow-down"></i>
+<span id="cart-count">0</span>
+</a>
+  </div>
+
+  <!-- Header -->
+  <header class="bgimg w3-container w3-content" id="home" style="max-width: 1500px; height: 130vh;">
+    <div class="w3-display-left w3-margin-top" style="padding-left: 5rem;">
+      <span class="w3-text-white home-span" style="font-size: 4rem; font-family: Roboto;">Weekend Cafe</span>
+      <p class="w3-text-white w3-p w3-animate-fading">PHONE ORDER 09134949291</p>
+      <a href="assets/login/index.html">
+        <button class="w3-btn w3-theme-d1 w3-hover-theme w3-border-theme">Order Now</button>
+      </a>
+    </div>
+  </header> 
+  
+<!-- Promo Section -->
+<section class="promo w3-animate-fading w3-margin-top w3-goldenrod" style="font-family: Roboto; font-size: 3rem;">
+  <h2>Special Weekend Offer!</h2>
+  <p>Get 20% off on all orders this weekend. Don't miss out!</p>
+  <a href="#products">
+  <button class="promo-btn">Buy Now</button>
+  </a>
+</section>
+
+
+  
+   <!-- About Container -->
+   <div class="w3-container w3-content w3-padding-64 reveal" id="about" style="margin-bottom: 10rem;">
+    <div class="w3-content" style="max-width:900px">
+      <h1 class="w3-center w3-padding-64"><span class="w3-tag w3-theme w3-padding-16 w3-wide" style="font-family: Roboto;">ABOUT US</span></h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error cupiditate id quo deserunt distinctio!
+        Doloremque incidunt fugit possimus? Repellat quas laborum pariatur natus, ea autem. Laudantium reiciendis amet
+        ut?.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora asperiores illo dolore laborum iusto
+        beatae exercitationem, qui quas maxime doloremque, inventore nobis, similique rem laboriosam quis odit
+        reiciendis mollitia!.</p>
+      <img src="assets/images/about-coffee.jpg" class="w3-round w3-image"
+        style="width:100%;max-width:1000px; height: 95vh; object-fit: cover; " class="w3-margin-top">
+      <p><strong>Opening hours:</strong> Mon-Fri 9:00am to 7:00pm Sat 9:00am to 9:00pm</p>
+      <p><strong>Address:</strong> Lapu2 Street, Magugpo South, Tagum City</p>
+    </div>
+  </div>
+
+   <!-- Menu Container --->
+
+   <div class="w3-display-container reveal w3-center w3-menu-bg" id="products">
+    <img src="assets/images/menu-header.jpg" class="w3-image-menu w3-border-theme" alt="" style="width: 60%; height: 40vh;">
+  </div>
+  <section class="w3-container w3-padding w3-center w3-theme-d3" style="margin-bottom: 10rem;">
+    <div class="w3-row-padding w3-padding-32 ">
+      <div class="reveal">
+        <h2 class="w3-text-white" id="drinks" style="margin-bottom: 3rem; font-size: 3rem;font-family: Roboto;">DRINKS</h2>
+        <div class="w3-third">
+          <div class="w3-card w3-margin w3-white">
+            <img src="assets/images/product-1.jpg" alt="Product 1" style="width:100%">
+            <div class="w3-container">
+              <h4>Iced chocolate</h4>
+              <p><s class="w3-padding-right w3-text-grey" >₱75.00</s>₱59.00</p>
+              <button
+                class="w3-margin-bottom w3-button w3-theme-d1 w3-round-large w3-hover-theme padding-bottom-16 card-button w3-center"
+                onclick="addToCart('Iced chocolate', 59.00)">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-third">
+          <div class="w3-card w3-margin w3-white ">
+            <img src="assets/images/product-2.jpg" alt="Product 1" style="width:100%">
+            <div class="w3-container">
+              <h4>Strawberry Latte</h4>
+              <p><s class="w3-padding-right w3-text-grey">₱75.00</s>₱49.00</p>
+              <button
+                class="w3-margin-bottom w3-button w3-theme-d1 w3-round-large w3-hover-theme padding-bottom-16 card-button w3-center"
+                onclick="addToCart('Strawberry Latte', 49.00)">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-third">
+          <div class="w3-card w3-margin w3-white ">
+            <img src="assets/images/product-3.jpg" alt="Product 1" style="width:100%">
+            <div class="w3-container">
+              <h4 id="matcha">Iced Matcha Latte</h4>
+              <p>₱99.00</p>
+              <button
+                class="w3-margin-bottom w3-button w3-theme-d1 w3-round-large w3-hover-theme padding-bottom-16 card-button w3-center"
+                onclick="addToCart('Iced Matcha Latte', 99.00)">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food Menu -->
+        <h2 class="w3-text-white" id="food" style="margin: 1em; font-size: 3rem;font-family: Roboto;">FOODS</h2>
+        <div class="w3-third">
+          <div class="w3-card w3-margin w3-white">
+            <img src="assets/images/product-4.jpg" alt="Product 1" style="width:100%">
+            <div class="w3-container">
+              <h4>Pork Sisig With Rice</h4>
+              <p><s class="w3-padding-right w3-text-grey">₱85.00</s>₱69.00</p>
+              <button
+                class="w3-margin-bottom w3-button w3-theme-d1 w3-round-large w3-hover-theme padding-bottom-16 card-button w3-center"
+                onclick="addToCart('Pork Sisig With Rice', 69.00)">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-third">
+          <div class="w3-card w3-margin w3-white">
+            <img src="assets/images/product-5.jpg" alt="Product 1" style="width:100%">
+            <div class="w3-container">
+              <h4>Crispy Pork Belly With Rice</h4>
+              <p>₱ 100.00</p>
+              <button
+                class="w3-margin-bottom w3-button w3-theme-d1 w3-round-large w3-hover-theme padding-bottom-16 card-button w3-center"
+                onclick="addToCart('Crispy Pork Belly With Rice', 100.00)">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-third">
+          <div class="w3-card-4 w3-margin w3-white">
+            <img src="assets/images/product-6.jpg" alt="Product 1" style="width:100%">
+            <div class="w3-container">
+              <h4>Honey Lemon Chicken With Rice</h4>
+              <p><s class="w3-padding-right w3-text-grey">₱99.00</s>₱ 69.00</p>
+              <button
+                class="w3-margin-bottom w3-button w3-theme-d1 w3-round-large w3-hover-theme padding-bottom-16 card-button w3-center"
+                onclick="addToCart('Honey Lemon Chicken With Rice', 69.00)">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> 
+
+  <!--Cart Section -->
+ <div id="cart" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+    <header class="w3-container w3-theme-d2">
+      <span onclick="document.getElementById('cart').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h2>Your Cart</h2>
+    </header>
+    <div class="w3-container">
+      <ul id="cart-items"></ul>
+      <p>Total: ₱<span id="total-price">0.00</span></p>
+      <button class="w3-button w3-red w3-round-large w3-margin-bottom" onclick="cancelOrder()">Cancel Order</button>
+    </div>
+  </div>
+</div>
+
+  
+
+
+  <!-- Our Story Content -->
+  <div class="w3-container w3-center w3-padding-32 reveal" id="our-story" style="margin-bottom: 10rem;">
+    <div class="w3-row">
+      <div class="w3-half w3-padding-large w3-center w3-padding-top-64">
+        <h2 class="w3-xxxlarge"><span class="w3-theme w3-padding" style="font-family: Poppins;">Our Story</span></h2>
+        <p class="w3-large;">Nestled along the bustling Lapu-Lapu Street in Tagum City, Weekend Cafe beckons with its urban charm and contemporary flair. Step into our space and immerse yourself in the vibrant energy of the city. From artisanal coffee to delectable pastries, we offer a unique culinary experience that tantalizes the taste buds. Join us at Weekend Cafe and savor the flavors of the city in every sip and bite.</p>
+      </div>
+      <div class="w3-half">
+        <img src="assets/images/location-1.jpg" alt="Our Story Image" class="w3-image" style="height: auto;">
+      </div>
+    </div>
+  </div>
+
+  <section class="w3-container w3-padding-64 w3-margin-top w3-theme-d3 reveal" id="blog" style="margin-bottom: 10rem;">
+    <h2 class="w3-center w3-xxlarge"><span class="w3-padding w3-wide" style="font-family: Poppins;">Latest Blog Post
+    </span></h2>
+    <div class="w3-row-padding w3-padding-32">
+      <div class="w3-half">
+        <div class="w3-card w3-margin-bottom">
+          <img src="assets/images/blog-1.jpg" alt="Blog Post Image" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-half w3-text-white">
+        <div class="w3-container">
+          <h3 class="w3-xxlarge w3-margin-top w3-animate-fading" >Win a Free Coffee for a Month!</h3>
+          <p>Participate in our latest giveaway for a chance to win free coffee for an entire month! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="w3-opacity">Published on April 5, 2024</p>
+        <a href="#" class="w3-button w3-theme-d1 w3-hover-theme">Participate Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="w3-container w3-margin-top reveal" style="margin-bottom: 10rem;">
+    <h2 class="w3-center w3-xxlarge">
+      <span class="w3-tag w3-theme w3-padding-16 w3-wide" style="font-family: Poppins;">Customer Reviews</span>
+    </h2>
+  
+    <div class="w3-row-padding">
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-container">
+          <div class="w3-container w3-center w3-light-grey w3-margin">
+            <p class="w3-text-grey" style="font-family: Roboto;">"Found my new coffee haven at Weekend Cafe! They have amazing single-origin beans, friendly baristas with latte art skills, and the smoothest cup I've had in ages."</p>
+          </div>
+          <div class="w3-center">
+            <img src="assets/images/customer-1.jpeg" alt="Avatar" class="w3-circle" style="width:150px; height: 140px;">
+            <h4>Mike Bryan Bongcawil</h4>
+          </div>
+        </div>
+      </div>
+  
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-container">
+          <div class="w3-container w3-center w3-light-grey w3-margin" style="font-family: Roboto;">
+            <p class="w3-text-grey">"Weekend Cafe is my happy place. Great coffee, comfy couches, and fast Wi-Fi make it perfect for relaxing or getting work done. Plus, their seasonal pastries are a delicious bonus."</p>
+          </div>
+          <div class="w3-center">
+            <img src="assets/images/customer-2.jpeg" alt="Avatar" class="w3-circle" style="width:150px; height: 140px;">
+            <h4>Dennis Michael Piquero</h4>
+          </div>
+        </div>
+      </div>
+  
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-container">
+          <div class="w3-container w3-center w3-light-grey w3-margin" style="font-family: Roboto;">
+            <p class="w3-text-grey">"Weekend Cafe saves my mornings! Fast service, perfect mobile orders, and delicious breakfast sandwiches. They even get my extra-caramel latte right every time!"</p>
+          </div>
+          <div class="w3-center">
+            <img src="assets/images/customer-3.jpeg" alt="Avatar" class="w3-circle" style="width:150px; height: 140px;">
+            <h4>Lester Kim Guhiling</h4>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+<!-- The Contact Section -->
+  <div class="w3-container w3-center">
+    <div class="w3-row">
+      <div class="w3-half w3-responsive-iframe w3-margin-top reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1978.0866716591715!2d125.80418832738165!3d7.446065479686697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f9530d24a7ec59%3A0x4823da3472777085!2sLapu-Lapu%20St%2C%20Tagum%2C%20Davao%20del%20Norte!5e0!3m2!1sen!2sph!4v1712174540686!5m2!1sen!2sph"height=400; style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="w3-half">
+        <div class="w3-container w3-content w3-padding-64 reveal w3-margin-top" style="max-width:800px" id="contact">
+          <h2 class="w3-wide w3-center">CONTACT</h2>
+          <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
+          <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+              <i class="fa fa-map-marker" style="width:30px"></i> Lapu-lapu Street, Tagum City, Philippines<br>
+              <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+              <i class="fa fa-envelope" style="width:30px"> </i> Email: weekendcafe@mail.com<br>
+            </div>
+            <div class="w3-col m6">
+              <form action="/action_page.php" target="_blank">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                  <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                  </div>
+                  <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                  </div>
+                </div>
+                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                <button class="w3-button w3-theme-d1 w3-hover-theme w3-section w3-right" type="submit">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="w3-display-container w3-content section-footer w3-text-white reveal" style="font-family: Roboto;">
+   <img class="w3-image" src="assets/images/thank-bg.jpg" alt="">
+   <div class="w3-display-left" style="padding-left: 4rem;">
+    <h1 style="font-size: 4rem;">Thank You!</h1>
+    <p style="font-size: 1.5rem;">For Choice Our Shop</p>
+    
+   </div>
+  </section>
+
+  
+  
+
+  <!-- Call of Action -->
+  <footer class="w3-container w3-padding-64 w3-center w3-margin-top w3-large w3-dark-background w3-theme-d3 reveal">
+    <div class="w3-row-padding">
+      <!-- Column 1: Shop Matcha -->
+      <div class="w3-quarter">
+        <h3>Products</h3>
+        <p class="w3-text-hover-a"><a href="#matcha">Just the Matcha</a></p>
+        <p class="w3-text-hover-a"><a href="#drinks">Drinks</a></p>
+        <p class="w3-text-hover-a"><a href="#food">Food</a></p>
+      </div>
+
+      <!-- Column 2: Learn -->
+      <div class="w3-quarter">
+        <h3>Learn</h3>
+        <p class="w3-text-hover-a"><a href="#">Matcha Recipes</a></p>
+        <p class="w3-text-hover-a"><a href="#">Caffeine Content</a></p>
+        <p class="w3-text-hover-a"><a href="#">Health Benefits</a></p>
+      </div>
+
+      <!-- Column 3: More from Tenzo -->
+      <div class="w3-quarter">
+        <h3>More from WeekendCafe</h3>
+        <p class="w3-text-hover-a"><a href="#our-story">Our Story</a></p>
+        <p class="w3-text-hover-a"><a href="#blog">Blog</a></p>
+        <p class="w3-text-hover-a"><a href="#">Affiliate</a></p>
+        <p class="w3-text-hover-a"><a href="#contact">Contact Us</a></p>
+        <p class="w3-text-hover-a"><a href="#">Faq’s</a></p>
+        <p class="w3-text-hover-a"><a href="#">Sign In</a></p>
+      </div>
+
+      <!-- Column 4: Let's Stay Connected -->
+      <div class="w3-quarter">
+        <h3>Let's Stay Connected</h3>
+        <p>Enter your email to unlock 10% OFF.</p>
+        <form action="/subscribe" method="post">
+          <input class="w3-input w3-border" type="email" placeholder="Enter your email" required>
+          <button class="w3-button w3-margin-top w3-theme-d1 w3-hover-theme">Subscribe</button>
+        </form>
+        <!-- Social Media Icons -->
+        <div class="w3-xlarge w3-section">
+          <h2>Follow Us</h2>
+          <i class="fab fa-facebook w3-hover-opacity"></i>
+          <i class="fab fa-instagram w3-hover-opacity"></i>
+          <i class="fab fa-twitter w3-hover-opacity"></i>
+          <i class="fab fa-whatsapp w3-hover-opacity"></i>
+        </div>
+      </div>
+
+    </div>
+    <!-- Copyright and Policies -->
+    <div class="w3-row w3-margin-top">
+      <p>© 2021 WeekendCafe</p>
+      <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Refund Policy</a> | <a
+          href="#">Accessibility Policy</a></p>
+    </div>
+  </footer>
+
+</body>
+
+<script type="text/javascript">
+  window.addEventListener('scroll', reveal);
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal')
+
+    for (var i = 0; i < reveals.length; i++) {
+
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 200;
+
+      if (revealtop < windowheight - revealpoint) {
+        reveals[i].classList.add('active');
+      }
+      else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  // Add scroll event listener
+  window.addEventListener('scroll', function () {
+    var sections = document.querySelectorAll('.w3-container');
+    // Select all sections
+    sections.forEach(function (section) {
+      var sectionPosition = section.getBoundingClientRect().top;
+      var screenPosition = window.innerHeight / 1.3;
+
+      // Check if section is visible in viewport
+      if (sectionPosition < screenPosition) {
+        var panels = section.querySelectorAll('.w3-panel');
+        panels.forEach(function (panel) {
+          panel.classList.add('show');
+        });
+      }
+    });
+  });
+
+  // CART ITEM HERE
+  // Array to store cart items
+  var cartItems = [];
+  var totalPrice = 0;
+
+  // Function to add an item to the cart
+  function addToCart(productName, price) {
+    cartItems.push(productName);
+    totalPrice += price;
+    updateCartCount();
+    updateCart();
+  }
+
+  // Function to update the cart count in the navigation bar
+  function updateCartCount() {
+    var cartCount = document.getElementById('cart-count');
+    cartCount.textContent = cartItems.length;
+  }
+
+  // Function to update the cart modal content
+  function updateCart() {
+    var cartList = document.getElementById("cart-items");
+    var cartContent = "";
+    for (var i = 0; i < cartItems.length; i++) {
+      cartContent += "<li>" + cartItems[i] + "</li>";
+    }
+    cartList.innerHTML = cartContent;
+    document.getElementById("total-price").innerText = totalPrice.toFixed(2);
+    document.getElementById("cart").style.display = "block";
+  }
+
+  // Function to cancel the order and reset the cart
+  function cancelOrder() {
+    cartItems = [];
+    totalPrice = 0;
+    updateCartCount();
+    updateCart();
+    document.getElementById("cart").style.display = "none";
+  }
+
+  // Function to toggle the visibility of the cart modal
+  function toggleCart() {
+    var cartModal = document.getElementById("cart");
+    cartModal.style.display = cartModal.style.display === "block" ? "none" : "block";
+  }
+
+
+
+</script>
+
+</html>
+
